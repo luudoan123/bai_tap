@@ -1,0 +1,21 @@
+from random import shuffle
+for i in range(5) :
+    nguoi_choi_chon = input('lua chon(bua, keo, bao):')
+    skills = ['bua', 'keo' 'bao']
+    shuffle (skills)
+    computers_skill = skills[0]
+
+    print(f'Người chơi chọn: {nguoi_choi_chon}')
+    print(f'Máy tính chọn: {computers_skill}')
+
+    if nguoi_choi_chon == computers_skill:
+        print('Hòa')
+    elif (
+        (nguoi_choi_chon == 'bua' and computers_skill == 'keo') or
+        (nguoi_choi_chon == 'keo' and computers_skill == 'bao') or
+        (nguoi_choi_chon == 'bao' and computers_skill == 'bua')
+    ):
+        print('Người chơi thắng')
+    else:
+        print('Máy tính thắng')
+print('Trò chơi kết thúc')
