@@ -1,6 +1,6 @@
 {
-    "name": "app1",
-    "short_name": "app1",
+    "name": "dart_project",
+    "short_name": "dart_project",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
